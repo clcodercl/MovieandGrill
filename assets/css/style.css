@@ -1,1 +1,49 @@
-dd
+#title {
+	background-color: lightblue;
+
+}
+
+.jumbotron {
+	text-align: center;
+	font-size:50px;
+	
+	
+}
+
+#movies {
+	height: 300px;
+	width: 200px;
+	margin: 10px;
+	background-color: #04139E;
+	color: white;
+	left: 0;
+	right: 0;
+	padding: 5px;
+	bottom: 3px;
+}
+
+#food {
+	height: 200px;
+	width: 300px;
+	margin: 10px;
+	background-color: #04139E;
+	color: white;
+	left: 0;
+	right: 0;
+	padding: 5px;
+	bottom: 3px;
+}
+ 
+#results {
+	font-size: 50px;
+	font-style: oblique;
+	color: blue;
+}
+
+#button {
+	font-size: 25px;
+	font-style: oblique;
+	color: blue;
+}
+
+
