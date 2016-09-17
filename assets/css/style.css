@@ -5,22 +5,28 @@
 
 .jumbotron {
 	text-align: center;
-	font-size:50px;
+	font-size:75px;
+	font-style:oblique;
+}
 	
+#p {
+	text-align: center;
 	
+
+
 }
 
+
+
 #movies {
-	height: 300px;
-	width: 200px;
-	margin: 10px;
-	background-color: #04139E;
+	height: 50px;
+	width: 700px;
+	background-color: #4556fa;
 	color: white;
-	left: 0;
-	right: 0;
-	padding: 5px;
+	padding: 10px;
 	bottom: 3px;
-}
+	text-align:center;
+	
 
 #food {
 	height: 200px;
@@ -40,10 +46,6 @@
 	color: blue;
 }
 
-#button {
-	font-size: 25px;
-	font-style: oblique;
-	color: blue;
-}
+
 
 
