@@ -8,6 +8,7 @@
     <!-- Bootstrap CDN-->
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="drop-theme-arrows.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <!-- Optional theme -->
 
@@ -16,9 +17,9 @@
 <body>
     
     <div id="title" class="jumbotron">Movies and Grub!</div>
-    <p>This web site is for when you want to chill at home with some good grub and watch a movie.</p>
+    <p id="p">A web site for when you want to chill at home with some good grub and watch a movie.</p>
 
-    <div id="Movies">
+    <div id="movies">
         <!--Random movie generator-->
     <input id="genre" class="panel panel-primary" type="search" placeholder="Genre">
     <input id="actor" class="panel panel-primary" type="search" placeholder="Actor">
@@ -33,13 +34,17 @@
 
     <div id="Food">
     <!--Food type drop down-->
+    <p>What kind of food do you feel like?</p>
+
 
  
     <div id="Results">
     <!--return movie results here?-->
     </div>
 
-  
+  	<script src="tether.min.js"></script>
+	<script src="drop.min.js"></script>
+
     <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
