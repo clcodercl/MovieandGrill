@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Movie and Grill!</title>
+    <title>Movie + Grill!</title>
     <!-- Bootstrap CDN-->
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -12,31 +12,35 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <!-- Optional theme -->
 
- </head>
-
+	</head>
 <body>
-    
-    <div id="title" class="jumbotron">Movies and Grub!
-     <p id="p">A web site for when you want to chill at home with some good grub and watch a movie.</p></div>
-   
+ 	<div id="line"></div>
 
-    <div id="movies">
+		<div id="title" class="jumbotron">&#151;&raquo;Movies &amp; Grill&laquo;&#151;
+    		<p id="p"&#151>Movie and food selector
+    			<br>for when you want to chill at home.<br>
+    		</p>
+     <div id="line2"></div>  
+    </div>
+
+
+
+<div id="movies">
         <!--Random movie generator-->
-    <p id="searchmovie">Search For Movie</p>
-    <input id="gifSearch" class="panel panel-primary" type="search" placeholder="Genre">
-    <input id="gifSearch" class="panel panel-primary" type="search" placeholder="Actor">
-    <input id="gifSearch" class="panel panel-primary" type="search" placeholder="Director">
-    <button class="btn btn-info" id="add">Submit</button>
-    </div>
+
+     <p id="searchmovie">&#151;Search For Movie&#151;</p>
+        <!--Input search fields-->
+        	<input id="gifSearch" class="panel panel-primary" type="search" placeholder="Genre">
+       	 	<input id="gifSearch" class="panel panel-primary" type="search" placeholder="Actor">
+        	<input id="gifSearch" class="panel panel-primary" type="search" placeholder="Director">
+        	<button class="btn btn-info" id="add">Submit</button>
+		<p id="foodkind">&#151;Food Type You're Craving&#151;</p>
+</div>
+
+
     
-    </div>
-    
 
 
-
-    <div id="food">
-    <!--Food type drop down-->
-    <p id="foodkind">Food Type You're Craving</p>
 
 
  
@@ -44,14 +48,20 @@
     <!--return movie results here?-->
     </div>
 
+
+
     <script src="tether.min.js"></script>
     <script src="drop.min.js"></script>
+
+
+
+
 
     <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment.min.js"></script>
-    <script rel="javascript" type="text/javascript" src="assets/javascript/logic.js"></script>
+    <script rel="javascript" type="text/javascript" src="assets/javascript/javascript.js"></script>
 </body>
 
 </html>
