@@ -1,5 +1,5 @@
 #title {
-	background-color: lightblue;
+	background-color: white;
 
 
 }
@@ -28,13 +28,13 @@
 }
 
 #line {
-	background-color: blue;
+	background-color: red;
 	height: 3px;
 	margin-top: none;
 }
 
 #line2 {
-	background-color: blue;
+	background-color: red;
 	height: 3px;
 	margin-bottom: -50px;
 }
@@ -44,7 +44,7 @@
 	width: 700px;
 	margin-right: auto;
 	margin-left: auto;
-	background-color: #5868fb;
+	background-color: 	 #cc0000;
 	color: white;
 	padding: auto;
 	bottom: auto;
