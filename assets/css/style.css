@@ -1,22 +1,13 @@
-#title {
-	background-color: white;
+#food {
 
-
-
-}
-
-.jumbotron {
-	text-align: center;
-	font-style:oblique;
-	font-size:75px;
-}
-	
-#p {
-	
-	font-size: 18px;
-	text-align: center;
-	text-align: top;
-
+	width: 700px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #5868fb;
+	color: white;
+	padding: 15px;
+	bottom: auto;
+	text-align:center;
 }
 
 #foodkind {
@@ -26,6 +17,14 @@
 	font-style:oblique;
 
 }
+
+
+.jumbotron {
+	text-align: center;
+	font-style:oblique;
+	font-size:75px;
+}
+
 
 #line {
 	background-color: red;
@@ -54,21 +53,13 @@
 	text-align:center;
 }
 
-#searchmovie {
-	font-size: 24px;
-}
+#p {
+	
+	font-size: 18px;
+	text-align: center;
+	text-align: top;
+	font-weight:bold; 
 
-
-#food {
-
-	width: 700px;
-	margin-right: auto;
-	margin-left: auto;
-	background-color: #5868fb;
-	color: white;
-	padding: 15px;
-	bottom: auto;
-	text-align:center;
 }
  
 #results {
@@ -78,5 +69,12 @@
 
 }
 
+#searchmovie {
+	font-size: 24px;
+}
 
 
+#title {
+	background-color: white;
+
+}
