@@ -57,7 +57,8 @@
 	font-size: 18px;
 	text-align: center;
 	text-align: top;
-	font-weight:bold; 
+	font-weight:bold;
+	padding-top: none;
 
 }
  
@@ -75,5 +76,6 @@
 
 #title {
 	background-color: white;
+	align:center;
 
 }
