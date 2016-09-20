@@ -25,13 +25,9 @@
 
 
 .jumbotron {
-	text-align: center;
 	font-style:oblique;
-	font-size:75px;
-
 }
 
-	
 	
 #movies {
 	width: 700px;
@@ -49,7 +45,6 @@
 	
 	font-size: 18px;
 	text-align: center;
-	text-align: top;
 	font-weight:bold;
 	padding-top: none;
 
@@ -70,13 +65,15 @@
 
 #title {
 	background-color: white;
-	align:center;
-	border-left: 10px solid red;
-    border-right: 10px solid red;
-    border-top: 10px solid red;
-    border-bottom: 10px solid red;
-    background-color:lightblue;
-    
+	border-left: 7px solid red;
+    border-right: 7px solid red;
+    border-top: 7px solid red;
+    border-bottom: 7px solid red;
+    height:400px;
+    width: 1000px;
+    margin-left: auto;
+  	margin-right: auto;
+  	border-radius: 20px;
 }
 
 #wrapper {
