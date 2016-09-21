@@ -75,7 +75,7 @@
 	border-left: 7px solid red;
     border-right: 7px solid red;
     border-top: 7px solid red;
-    border-radius: 40px;
+    border-radius: 5S0px;
     margin-left: auto;
   	margin-right: auto;
   	width: 1000px;
@@ -85,6 +85,7 @@
 #wrapper {
 	background-color:lightblue;
 }
+
 
 .drop-element {
   // Set the initial state for our animation
