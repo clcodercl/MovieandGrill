@@ -14,6 +14,7 @@
 	padding: 15px;
 	text-align:center;
 	width: 700px;
+
 }
 
 #foodkind {
@@ -21,6 +22,7 @@
 	font-size: 24px;
 	font-style:oblique;
 	text-align: center;
+	color:white;
 }
 
 
@@ -34,7 +36,7 @@
 	margin-right: auto;
 	margin-left: auto;
 	background-color:#cc0000;
-	color: white;
+	color:  #4d4d33;
 	padding: auto;
 	bottom: auto;
 	text-align:center;
@@ -47,6 +49,7 @@
 	text-align: center;
 	font-weight:bold;
 	padding-top: none;
+	color:#4d4d33;
 
 }
  
@@ -67,6 +70,8 @@
 #searchmovie {
 	font-size: 24px;
 	font-style:oblique;
+	color:white;
+
 
 }
 
