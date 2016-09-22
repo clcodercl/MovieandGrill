@@ -3,6 +3,8 @@
 }
 
 
+
+
 #food {
 	background-color: #5868fb;
 	bottom: auto;
@@ -78,9 +80,11 @@
     border-radius: 50px;
     margin-left: auto;
   	margin-right: auto;
-  	width: 1000px;
+  	width:1000px;
   	
 }
+
+
 
 #wrapper {
 	background-color:lightblue;
