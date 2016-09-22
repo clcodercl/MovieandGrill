@@ -20,4 +20,20 @@ $('.submit').on('click', function(){
 	})
 })
 
+var APIkey = "ed4f6d7da758d9572e9076762c6831d9";
+
+//$('.submit').on('click', function(){
+//	var queryURL = "https://community-food2fork.p.mashape.com/search?key=" + APIkey + "&q=Italian";
+	//default call from API website. parameters will be changed based on user input
+
+//	console.log('tester');
+
+//	$.ajax({
+//		url: queryURL,
+//		method: 'GET'
+//	}).done( function(movie) {
+//		console.log(movie);
+//	})
+//})
+
 
