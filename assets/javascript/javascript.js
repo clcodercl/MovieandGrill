@@ -6,6 +6,7 @@
 
 console.log('testing 1 2');
 
+
 $('.submit').on('click', function(){
 	
 	//default call from API website. parameters will be changed based on user input
@@ -19,16 +20,15 @@ $('.submit').on('click', function(){
 	console.log("genre: " + genre + ", actor: " + actor + ", director: " + director);
 
 	var newActor = actor.split(" ").join("%20");
-	console.log(newActor);
 	var newDirector = director.split(" ").join("%20");
-	console.log(newDirector);
 
 	var queryURL = "http://netflixroulette.net/api/api.php?actor=" + newActor + "&director=" + newDirector;
 	$.ajax({
 		url: queryURL,
 		method: 'GET'
 	}).done( function(movie) {
-		console.log(movie);
+		console.log(movie[0].show_title);
+		$('#results').append(movie[0].show_title);
 	})
 })
 
