@@ -52,10 +52,10 @@ $('.submit').on('click', function(){
 				
 				$('#results').html('<img src= ' + movieUrl + '>');
 		})
+})
 
 
-
-var APIkey = "ed4f6d7da758d9572e9076762c6831d9";
+//var APIkey = "ed4f6d7da758d9572e9076762c6831d9";
 
 //$('.submit').on('click', function(){
 //	var queryURL = "https://community-food2fork.p.mashape.com/search?key=" + APIkey + "&q=Italian";
