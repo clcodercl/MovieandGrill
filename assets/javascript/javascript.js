@@ -32,6 +32,29 @@ $('.submit').on('click', function(){
 	})
 })
 
+// AG update for Movie Poster
+	$('#submit').on('click', function(){
+
+		// Here we grab the text from the input box 
+		var moviePoster = movie;
+
+		// Here we assemble our URL 
+		var queryURL = "http://www.omdbapi.com/?t=" + moviePoster + "&y=&plot=short&r=json";
+
+		//------
+		$.ajax({url: 
+			queryURL, method: 'GET'})
+			.done(function (movieData) {
+				movieUrl = "'" + movieData.Poster + "'";
+
+				console.log(movieData);
+				console.log(movieData.Poster);
+				
+				$('#results').html('<img src= ' + movieUrl + '>');
+		})
+
+
+
 var APIkey = "ed4f6d7da758d9572e9076762c6831d9";
 
 //$('.submit').on('click', function(){
