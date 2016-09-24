@@ -27,8 +27,9 @@ $('.submit').on('click', function(){
 		url: queryURL,
 		method: 'GET'
 	}).done( function(movie) {
+		console.log(movie.length);
 		console.log(movie[0].show_title);
-		$('#results').append(movie[0].show_title);
+		$('#results').html(movie[0].show_title);
 	})
 })
 
