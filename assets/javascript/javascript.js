@@ -23,31 +23,23 @@ $('.submit').on('click', function(){
 	}).done( function(movie) {
 		console.log(movie[0].show_title);
 		$('#results').append(movie[0].show_title);
-	})
-})
 
-// AG update for Movie Poster
-	$('#submit').on('click', function(){
-
+		// AG update for Movie Poster
 		// Here we grab the text from the input box 
-		var moviePoster = movie;
-
+		var moviePoster = movie[0].show_title;
 		// Here we assemble our URL 
 		var queryURL = "http://www.omdbapi.com/?t=" + moviePoster + "&y=&plot=short&r=json";
 
-		//------
 		$.ajax({url: 
 			queryURL, method: 'GET'})
 			.done(function (movieData) {
 				movieUrl = "'" + movieData.Poster + "'";
-
 				console.log(movieData);
-				console.log(movieData.Poster);
-				
-				$('#results').html('<img src= ' + movieUrl + '>');
+				console.log(movieData.Poster);				
+				$('#resultsImage').html('<img src= ' + movieUrl + '>');
 		})
+	})
 })
-
 
 //var APIkey = "ed4f6d7da758d9572e9076762c6831d9";
 
