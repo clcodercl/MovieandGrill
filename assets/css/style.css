@@ -81,7 +81,9 @@
 }
 
 #resultsImage {
-	align-content:center;
+	width: 700px;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 #searchmovie {
