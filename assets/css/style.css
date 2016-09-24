@@ -1,3 +1,5 @@
+
+
 #actor1 {
 	font-size: 15px;
 	font-style:oblique;
@@ -11,7 +13,7 @@
 
 
 #food1 {
-	width: 700px;
+	width: 300px;
 	margin-right: auto;
 	margin-left: auto;
 	background-color:#cc0000;
@@ -20,6 +22,9 @@
 	text-align:center;
 	border-radius: 30px;
 	padding: 10px;
+	width: 100%;
+    
+    
 }
 
 #foodkind {
@@ -37,15 +42,15 @@
 
 	
 #movies {
-	width: 600px;
-	margin-right: auto;
-	margin-left: auto;
+	width: 300px;
 	background-color:#cc0000;
 	padding: auto;
 	bottom: auto;
 	text-align:center;
 	border-radius: 30px;
-
+    width: 100%;
+    float: left;
+   
 }
 
 #director1 {
@@ -67,29 +72,27 @@
 }
  
 #results {
-	width: 700px;
-	margin-right: auto;
-	margin-left: auto;
+	width: 300px;
 	background-color:#cc0000;
 	color: white;
-	padding: auto;
-	bottom: auto;
+	padding: 25px;
 	text-align:center;
 	border-radius: 30px;
-	
+	font-size: 16px;
+	font-weight:bold;
+	font-style:oblique;
+	width: 100%;
+    float: right;
+
 
 }
 
-#resultsImage {
-	width: 700px;
-	margin-right: auto;
-	margin-left: auto;
-}
 
 #searchmovie {
 	font-size: 24px;
 	font-style:oblique;
 	color:white;
+
 
 }
 
@@ -99,6 +102,7 @@
 	margin-left: auto;
 	padding:10px;
 	font-size: 16px;
+	float:bottom;
 }
 
 
@@ -111,7 +115,7 @@
     border-radius: 50px;
     margin-left: auto;
   	margin-right: auto;
-  	width:1000px;
+  	width:1200px;
   	height:375px;
 }
 
@@ -119,7 +123,7 @@
 
 #wrapper {
 	background-color:lightblue;
-}
+	 }
 
 
 .drop-element {

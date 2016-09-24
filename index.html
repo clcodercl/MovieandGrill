@@ -23,11 +23,12 @@
     		</p>
     </div>
 
-
-
-
-<div id="wrapper">
-	<div id="movies">
+<div class="container">
+  <div class="row">
+    
+     <div id="wrapper">
+     <div class="col-md-4">
+	     <div id="movies">
 	        <!--Random movie generator-->
             <p id="searchmovie">&#151;Search for Movie&#151;</p>
             <p id="actor1">By Actor</p>
@@ -35,36 +36,45 @@
 	       	 	<input id="actor" class="panel panel-primary" type="search" placeholder="Actor">
 	       	 	<p id="director1">By Director</p>
 	        	<input id="director" class="panel panel-primary" type="search" placeholder="Director">
-			
-    </div>
-    <<br>
-    <div id="food1">
+            </div><br>
+     </div>
+    <div class="col-md-4">
+      <div id="food1">
         <p id="foodkind">&#151;Search for Food&#151;</p>
 
         <select id="food">
-  			<option value="None">-- Select --</option>
-   			<option value="Beef">Beef</option>
-   			<option value="Chicken">Chicken</option>
-   			<option value="Pasta">Pasta</option>
-   			<option value="Pizza">Pizza</option>
-   			<option value="Vegetarian">Vegetarian</option>
-   			<option value="Salad">Salad</option>
-   			<option value="Seafood">Seafood</option>
-		</select>
-
-
-            <!-- Single button -->
-        
-    </div>
+        <option value="None">-- Select --</option>
+        <option value="Beef">Beef</option>
+        <option value="Chicken">Chicken</option>
+        <option value="Pasta">Pasta</option>
+        <option value="Pizza">Pizza</option>
+        <option value="Vegetarian">Vegetarian</option>
+        <option value="Salad">Salad</option>
+        <option value="Seafood">Seafood</option>
+        </select>
+      </div>
 
 	 <div id="submit"><button class="submit" id="add">Submit</button></div>
+   </div>
+    
+    
+    <div class="col-md-4">
+     
+
       <div id="results">
-      <!--return movie results here?-->
-      </div>
-      <div id="resultsImage" align="center">
+      <p>How about?</p><!--return movie results here?-->
+       <div id="resultsImage" align="right">
       <!-- return movie poster here-->
       </div>
-</div>
+      </div>
+
+     
+       </div>
+       </div>
+       </div>
+       </div>
+
+
 
     <script src="tether.min.js"></script>
     <!-- <script src="drop.min.js"></script> -->
