@@ -1,10 +1,17 @@
+#actor {
+	font-size: 15px;
+	font-style:oblique;
+	text-align:center;
+	color:white;
+}
+
 #body {
 	 background-color:lightblue;
 }
 
 
-#food {
-	width: 300px;
+#food1 {
+	width: 700px;
 	margin-right: auto;
 	margin-left: auto;
 	background-color:#cc0000;
@@ -16,10 +23,9 @@
 }
 
 #foodkind {
-	
 	font-size: 24px;
 	font-style:oblique;
-	text-align: center;
+	text-align:center;
 	color:white;
 }
 
@@ -41,6 +47,14 @@
 	border-radius: 30px;
 
 }
+
+#director {
+	font-size: 15px;
+	font-style:oblique;
+	text-align:center;
+	color:white;
+}
+
 
 #p {
 	
@@ -64,6 +78,10 @@
 	border-radius: 30px;
 	
 
+}
+
+#resultsImage {
+	align-content:center;
 }
 
 #searchmovie {
