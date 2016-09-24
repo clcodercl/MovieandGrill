@@ -3,17 +3,16 @@
 }
 
 
-
-
 #food {
-	background-color: #5868fb;
-	bottom: auto;
-	color: white;
+	width: 300px;
 	margin-right: auto;
 	margin-left: auto;
-	padding: 15px;
+	background-color:#cc0000;
+	padding: auto;
+	bottom: auto;
 	text-align:center;
-	width: 700px;
+	border-radius: 30px;
+	padding: 10px;
 }
 
 #foodkind {
@@ -21,7 +20,9 @@
 	font-size: 24px;
 	font-style:oblique;
 	text-align: center;
+	color:white;
 }
+
 
 
 .jumbotron {
@@ -30,15 +31,15 @@
 
 	
 #movies {
-	width: 700px;
+	width: 600px;
 	margin-right: auto;
 	margin-left: auto;
 	background-color:#cc0000;
-	color: white;
 	padding: auto;
 	bottom: auto;
 	text-align:center;
 	border-radius: 30px;
+
 }
 
 #p {
@@ -47,6 +48,7 @@
 	text-align: center;
 	font-weight:bold;
 	padding-top: none;
+
 
 }
  
@@ -67,21 +69,30 @@
 #searchmovie {
 	font-size: 24px;
 	font-style:oblique;
+	color:white;
 
+}
+
+#submit {
+	width: 100px;
+	margin-right: auto;
+	margin-left: auto;
+	padding:10px;
+	font-size: 16px;
 }
 
 
 #title {
 	background-color: white;
-	border-bottom: 7px solid red;
-	border-left: 7px solid red;
-    border-right: 7px solid red;
-    border-top: 7px solid red;
+	border-bottom: 8px solid red;
+	border-left: 8px solid red;
+    border-right: 8px solid red;
+    border-top: 8px solid red;
     border-radius: 50px;
     margin-left: auto;
   	margin-right: auto;
   	width:1000px;
-  	
+  	height:375px;
 }
 
 

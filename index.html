@@ -19,7 +19,7 @@
 		<div id="title" class="jumbotron">
 			<img id="dog" img src="assets/images/movdin.jpg">
             <img id="cat" img src="assets/images/mewvie.jpg">
-    		<p id="p">Helps you pick a movie and recipe<br> for when you want to chill at home
+    		<p id="p">Helps you pick a movie and a recipe<br> for when you want to chill at home
     		</p>
     </div>
 
@@ -27,15 +27,47 @@
 <div id="wrapper">
 	<div id="movies">
 	        <!--Random movie generator-->
-
-	       <p id="searchmovie">&#151;Search For Movie&#151;</p>
+            <p id="searchmovie">&#151;Search for Movie&#151;</p>
 	        <!--Input search fields-->
-	        	<input id="genre" class="panel panel-primary" type="search" placeholder="Genre">
+	        	 <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Genre<span class="caret"></span>
+                    </button>
+                        <ul class="dropdown-menu" color="blue">
+                            <li><a href="#">Action &amp; Adventure</a></li>
+                            <li><a href="#">Anime</a></li>
+                            <li><a href="#">Children &amp; Family</a></li>
+                            <li><a href="#">Classic Movies</a></li>
+                            <li><a href="#">Comedies</a></li>
+                            <li><a href="#">Documentaries</a></li>
+                            <li><a href="#">Dramas</a></li> 
+                            <li><a href="#">Faith &amp; Spirituality</a></li>
+                            <li><a href="#">Foreign Movies</a></li>
+                            <li><a href="#">Gay &amp; Lesbian</a></li>
+                            <li><a href="#">Horror</a></li>
+                            <li><a href="#">Independent Movies</a></li>
+                            <li><a href="#">Oscar-winning</a></li>
+                            <li><a href="#">Romance</a></li>
+                            <li><a href="#">Sci-Fi &amp; Fantasy</a></li>
+                            <li><a href="#">Sports</a></li>
+                            <li><a href="#">Thrillers</a></li>
+                            <li><a href="#">TV Shows</a></li>
+                        </ul>
+</div>
 	       	 	<input id="actor" class="panel panel-primary" type="search" placeholder="Actor">
 	        	<input id="director" class="panel panel-primary" type="search" placeholder="Director">
 
+<<<<<<< HEAD
 	        	<button class="submit" id="add">Submit</button>
 			<p id="foodkind">&#151;Search for Food&#151;</p>
+=======
+	        	
+			
+    </div>
+    <<br>
+    <div id="food">
+        <p id="foodkind">&#151;Search for Food&#151;</p>
+>>>>>>> 69ae1979e4baa07b908656e9ccc635e428d935c9
 
             <!-- Single button -->
     <div class="btn-group">
@@ -52,14 +84,10 @@
         <li><a href="#">Wine and Cheese</a></li>
       </ul>
 </div>
-				<!--code for drop<div class="drop-element">
-  				<div class="drop-content">
-    			
- 					</div>
-					</div>-->
+        
     </div>
 
-	 
+	 <div id="submit"><button class="submit" id="add">Submit</button></div>
 	    <div id="results">
 	    <!--return movie results here?-->
 	    </div>

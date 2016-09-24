@@ -23,7 +23,7 @@ $('.submit').on('click', function(){
 	var newDirector = director.split(" ").join("%20");
 	console.log(newDirector);
 
-	var queryURL = "http://netflixroulette.net/api/api.php?actor=" + newActor;
+	var queryURL = "http://netflixroulette.net/api/api.php?actor=" + newActor + "&director=" + newDirector;
 	$.ajax({
 		url: queryURL,
 		method: 'GET'
