@@ -4,20 +4,14 @@
 //JQuery to add movie suggestion to HTML
 //JQuery to add recipes to HTML
 
-console.log('testing 1 2');
 
 
 $('.submit').on('click', function(){
 	
-	//default call from API website. parameters will be changed based on user input
-
-	console.log('tester');
-
-	var genre = $('#genre').val();
 	var actor = $('#actor').val();
 	var director = $('#director').val();
 
-	console.log("genre: " + genre + ", actor: " + actor + ", director: " + director);
+	console.log("actor: " + actor + ", director: " + director);
 
 	var newActor = actor.split(" ").join("%20");
 	var newDirector = director.split(" ").join("%20");
