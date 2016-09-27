@@ -15,8 +15,7 @@
   };
   firebase.initializeApp(config);
 
-
-
+  var database = firebase.database();
 
 $('.submit').on('click', function(){
 	
@@ -35,6 +34,7 @@ $('.submit').on('click', function(){
 	}).done( function(movie) {
 		console.log(movie[0].show_title);
 		$('#results').append(movie[0].show_title);
+		database.ref().push(movie[0].show_title);
 
 		// AG update for Movie Poster
 		// Here we grab the text from the input box 
