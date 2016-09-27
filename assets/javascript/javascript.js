@@ -33,7 +33,7 @@ $('.submit').on('click', function(){
 		method: 'GET'
 	}).done( function(movie) {
 		console.log(movie[0].show_title);
-		$('#results').append(movie[0].show_title);
+		$('#results').append(movie[0].show_title + "<br>");
 		database.ref().push(movie[0].show_title);
 
 		// AG update for Movie Poster
@@ -70,6 +70,8 @@ $('.submit').on('click', function(){
 		jsonp: 'callback'
 	}).done(function(food) {
 		console.log(food);
+		console.log(food.hits[0].recipe.label);
+		$('#results').append("<br>" + food.hits[0].recipe.label);
 	})
 })
 
