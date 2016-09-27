@@ -5,6 +5,18 @@
 //JQuery to add recipes to HTML
 
 
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyADsArEnJbn4MJjAu8US-Q0DkGpGLCz_DI",
+    authDomain: "movie-e845e.firebaseapp.com",
+    databaseURL: "https://movie-e845e.firebaseio.com",
+    storageBucket: "movie-e845e.appspot.com",
+    messagingSenderId: "156828451616"
+  };
+  firebase.initializeApp(config);
+
+
+
 
 $('.submit').on('click', function(){
 	
