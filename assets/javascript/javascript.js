@@ -53,20 +53,23 @@ $('.submit').on('click', function(){
 	})
 })
 
-//var APIkey = "ed4f6d7da758d9572e9076762c6831d9";
+// AG Adding Edamam Call
+$('.submit').on('click', function(){
+	
+	var appKey = "3eb7ff7bd47dab68bd633c3a5ef47743";
+	var appId = "79458510"
 
-//$('.submit').on('click', function(){
-//	var queryURL = "https://community-food2fork.p.mashape.com/search?key=" + APIkey + "&q=Italian";
-	//default call from API website. parameters will be changed based on user input
+	var queryURL = "https://api.edamam.com/search?q=chicken" +
+					"&app_id=" + appId +
+				    "&app_key=" + appKey;
 
-//	console.log('tester');
-
-//	$.ajax({
-//		url: queryURL,
-//		method: 'GET'
-//	}).done( function(movie) {
-//		console.log(movie);
-//	})
-//})
-
+	$.ajax({
+		url: queryURL,
+		method: 'GET',
+		dataType: 'jsonp',
+		jsonp: 'callback'
+	}).done(function(food) {
+		console.log(food);
+	})
+})
 
