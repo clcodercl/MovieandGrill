@@ -17,14 +17,16 @@
 
   var database = firebase.database();
 
-  $('#results').hide();
+  $('#movieresults').hide();
+  $('#foodresults').hide();
 
 $('.submit').on('click', function(){
 
 	$('#movies').hide();
 	$('#food1').hide();
 	$('#submit').hide();
-	$('#results').show();
+	$('#movieresults').show();
+	$('#foodresults').show();
 	
 	var actor = $('#actor').val();
 	var director = $('#director').val();
@@ -42,13 +44,13 @@ $('.submit').on('click', function(){
 		//random number variable
 		var random = Math.floor(Math.random()*movie.length);
 		//sends a random movie from the array to the html
-		$('#results').append("Movie: " + movie[random].show_title + "<br>");
+		$('#movieresults').append("Movie: " + movie[random].show_title + "<br>");
 		//pushes to firebase
 		database.ref().push(movie[random].show_title);
 
 		// AG update for Movie Poster
 		// Here we grab the text from the input box 
-		var moviePoster = movie[0].show_title;
+		var moviePoster = movie[random].show_title;
 		// Here we assemble our URL 
 		var queryURL = "http://www.omdbapi.com/?t=" + moviePoster + "&y=&plot=short&r=json";
 
@@ -58,7 +60,7 @@ $('.submit').on('click', function(){
 				movieUrl = "'" + movieData.Poster + "'";
 				console.log(movieData);
 				console.log(movieData.Poster);				
-				$('#resultsImage').html('<img src= ' + movieUrl + '>');
+				$('#movieresults').append('<img src= ' + movieUrl + '>');
 		})
 	})
 
@@ -85,9 +87,9 @@ $('.submit').on('click', function(){
         var ran = Math.floor(Math.random()*food.hits.length);
         console.log("random number: " + ran);
         var imageURL = food.hits[ran].recipe.image;
-        $('#resultsImage').html('<img src= ' + imageURL + '>');
+        $('#foodresults').append('<img src= ' + imageURL + '>');
         var recipeURL = food.hits[ran].recipe.url;
-        $('#results').append("Recipe: " + "<br> <a href=\""  + recipeURL + "\">" +  food.hits[ran].recipe.label + "</a>");
+        $('#foodresults').append("Recipe: " + "<br> <a href=\""  + recipeURL + "\">" +  food.hits[ran].recipe.label + "</a>");
 	})
 })
 
