@@ -17,7 +17,14 @@
 
   var database = firebase.database();
 
+  $('#results').hide();
+
 $('.submit').on('click', function(){
+
+	$('#movies').hide();
+	$('#food1').hide();
+	$('#submit').hide();
+	$('#results').show();
 	
 	var actor = $('#actor').val();
 	var director = $('#director').val();
