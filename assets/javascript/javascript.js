@@ -35,7 +35,7 @@ $('.submit').on('click', function(){
 		//random number variable
 		var random = Math.floor(Math.random()*movie.length);
 		//sends a random movie from the array to the html
-		$('#results').append(movie[random].show_title + "<br>");
+		$('#results').append("Movie: " + movie[random].show_title + "<br>");
 		//pushes to firebase
 		database.ref().push(movie[random].show_title);
 
@@ -54,11 +54,7 @@ $('.submit').on('click', function(){
 				$('#resultsImage').html('<img src= ' + movieUrl + '>');
 		})
 	})
-})
 
-// AG Adding Edamam Call
-$('.submit').on('click', function(){
-	
 	var appKey = "3eb7ff7bd47dab68bd633c3a5ef47743";
 	var appId = "79458510"
 
@@ -79,10 +75,18 @@ $('.submit').on('click', function(){
 	}).done(function(food) {
 		//AG add image, link to recipe
         //$('#results').append("<br>" + food.hits[0].recipe.label);
-        var imageURL = food.hits[0].recipe.image;
+        var ran = Math.floor(Math.random()*food.hits.length);
+        console.log("random number: " + ran);
+        var imageURL = food.hits[ran].recipe.image;
         $('#resultsImage').html('<img src= ' + imageURL + '>');
-        var recipeURL = food.hits[0].recipe.url;
-        $('#results').append("<br> <a href=\""  + recipeURL + "\">" +  food.hits[0].recipe.label + "</a>");
+        var recipeURL = food.hits[ran].recipe.url;
+        $('#results').append("Recipe: " + "<br> <a href=\""  + recipeURL + "\">" +  food.hits[ran].recipe.label + "</a>");
 	})
 })
+
+// AG Adding Edamam Call
+//$('.submit').on('click', function(){
+	
+	
+//})
 
