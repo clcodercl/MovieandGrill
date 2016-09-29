@@ -32,9 +32,12 @@ $('.submit').on('click', function(){
 		url: queryURL,
 		method: 'GET'
 	}).done( function(movie) {
-		console.log(movie[0].show_title);
-		$('#results').append(movie[0].show_title + "<br>");
-		database.ref().push(movie[0].show_title);
+		//random number variable
+		var random = Math.floor(Math.random()*movie.length);
+		//sends a random movie from the array to the html
+		$('#results').append(movie[random].show_title + "<br>");
+		//pushes to firebase
+		database.ref().push(movie[random].show_title);
 
 		// AG update for Movie Poster
 		// Here we grab the text from the input box 
@@ -74,9 +77,12 @@ $('.submit').on('click', function(){
 		dataType: 'jsonp',
 		jsonp: 'callback'
 	}).done(function(food) {
-		console.log(food);
-		console.log(food.hits[0].recipe.label);
-		$('#results').append("<br>" + food.hits[0].recipe.label);
+		//AG add image, link to recipe
+        //$('#results').append("<br>" + food.hits[0].recipe.label);
+        var imageURL = food.hits[0].recipe.image;
+        $('#resultsImage').html('<img src= ' + imageURL + '>');
+        var recipeURL = food.hits[0].recipe.url;
+        $('#results').append("<br> <a href=\""  + recipeURL + "\">" +  food.hits[0].recipe.label + "</a>");
 	})
 })
 
