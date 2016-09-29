@@ -59,9 +59,14 @@ $('.submit').on('click', function(){
 	var appKey = "3eb7ff7bd47dab68bd633c3a5ef47743";
 	var appId = "79458510"
 
-	var queryURL = "https://api.edamam.com/search?q=chicken" +
+	var foodType = $('#food').val();
+	console.log(foodType);
+
+
+	var queryURL = "https://api.edamam.com/search?q=" + foodType +
 					"&app_id=" + appId +
 				    "&app_key=" + appKey;
+
 
 	$.ajax({
 		url: queryURL,
