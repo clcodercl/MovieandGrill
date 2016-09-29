@@ -9,6 +9,13 @@
 	 background-color:lightblue;
 }
 
+#director1 {
+	color:white;
+	font-size: 15px;
+	font-style:oblique;
+	text-align:center;	
+}
+
 #food1 {
 	background-color:#cc0000;
 	border-radius: 50px;
@@ -26,6 +33,18 @@
 	text-align:center;	
 }
 
+ 
+#foodresults {
+	background-color:#cc0000;
+	border-radius: 50px;
+	color: white;
+	font-size: 16px;
+	font-style:oblique;
+	padding: 25px;
+	text-align:center;
+	width: 100%;
+}
+
 .jumbotron {
 	font-style:oblique;
 }
@@ -38,12 +57,14 @@
     width: 100%; 
 }
 
-#director1 {
-	color:white;
-	font-size: 15px;
-	font-style:oblique;
-	text-align:center;	
+#or {
+	text-align:center;
+    font-size: 18px;
+    font-style:oblique;
+    color:blue;
 }
+
+
 
 #p {
 	font-size: 18px;
@@ -52,7 +73,7 @@
 	text-align: center;
 }
  
-#results {
+#movieresults {
 	background-color:#cc0000;
 	border-radius: 50px;
 	color: white;
