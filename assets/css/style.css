@@ -86,10 +86,10 @@
 
 
 #searchmovie {
-	color:white;
-	font-size: 24px;
+	color:#cc0000;
+	font-size: 40px;
 	font-style:oblique;
-	align:center;
+	text-align:center;
 }
 
 #submit {
