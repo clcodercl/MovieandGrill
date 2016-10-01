@@ -22,6 +22,9 @@
 
 $('.submit').on('click', function(){
 
+	//$('#movieresults').empty();
+	//$('#foodresults').empty();
+
 	$('#movies').hide();
 	$('#food1').hide();
 	$('#submit').hide();
@@ -44,7 +47,7 @@ $('.submit').on('click', function(){
 		//random number variable
 		var random = Math.floor(Math.random()*movie.length);
 		//sends a random movie from the array to the html
-		$('#movieresults').append("Movie: " + movie[random].show_title + "<br>");
+		$('#movieresults').append(movie[random].show_title + "<br>");
 		//pushes to firebase
 		database.ref().push(movie[random].show_title);
 
@@ -89,13 +92,7 @@ $('.submit').on('click', function(){
         var imageURL = food.hits[ran].recipe.image;
         $('#foodresults').append('<img src= ' + imageURL + '>');
         var recipeURL = food.hits[ran].recipe.url;
-        $('#foodresults').append("Recipe: " + "<br> <a href=\""  + recipeURL + "\">" +  food.hits[ran].recipe.label + "</a>");
+        $('#foodresults').append("<br> <a href=\""  + recipeURL + "\">" +  food.hits[ran].recipe.label + "</a>");
+        //$('#foodresults').append($('#submit'));
 	})
 })
-
-// AG Adding Edamam Call
-//$('.submit').on('click', function(){
-	
-	
-//})
-
