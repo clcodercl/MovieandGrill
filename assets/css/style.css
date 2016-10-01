@@ -195,3 +195,8 @@ body, html {
 	background-color:lightblue;
 }
 
+/* Set the fixed height of the footer here */
+#footer {
+  height: 60px;
+  background-color: #f5f5f5;
+}
