@@ -19,17 +19,22 @@
 
   $('#movieresults').hide();
   $('#foodresults').hide();
+  $('#refreshResultsButton').hide();
+
 
 $('.submit').on('click', function(){
 
 	//$('#movieresults').empty();
 	//$('#foodresults').empty();
+	$('#movieresults').html("");
+	$('#foodresults').html("");
 
 	$('#movies').hide();
 	$('#food1').hide();
 	$('#submit').hide();
 	$('#movieresults').show();
 	$('#foodresults').show();
+	$('#refreshResultsButton').show();
 	
 	var actor = $('#actor').val();
 	var director = $('#director').val();
@@ -92,7 +97,7 @@ $('.submit').on('click', function(){
         var imageURL = food.hits[ran].recipe.image;
         $('#foodresults').append('<img src= ' + imageURL + '>');
         var recipeURL = food.hits[ran].recipe.url;
-        $('#foodresults').append("<br> <a href=\""  + recipeURL + "\">" +  food.hits[ran].recipe.label + "</a>");
+        $('#foodresults').append("<br> <a target='_blank' href=\""  + recipeURL + "\">" +  food.hits[ran].recipe.label + "</a>");
         //$('#foodresults').append($('#submit'));
 	})
 })
