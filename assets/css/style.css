@@ -195,8 +195,14 @@ body, html {
 	background-color:lightblue;
 }
 
-/* Set the fixed height of the footer here */
+
+#header {
+  background-color:lightblue;
+  height: 25px;
+  font-style:oblique;
+}
 #footer {
-  height: 60px;
+  height: 25px;
   background-color: #f5f5f5;
+  	font-style:oblique;
 }
