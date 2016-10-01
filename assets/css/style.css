@@ -91,6 +91,13 @@
 	display:flex;
 }
 
+#resetButton {
+	font-size: 16px;
+	padding:30px 15px;
+	width:300px;
+	display:inline;
+}
+
 #searchmovie {
 	color:white;
 	font-size: 40px;
