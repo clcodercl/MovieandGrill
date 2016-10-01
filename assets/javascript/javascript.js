@@ -20,6 +20,18 @@
   $('#movieresults').hide();
   $('#foodresults').hide();
   $('#refreshResultsButton').hide();
+  $('#resetButton').hide();
+
+
+$('.reset').on('click', function(){
+	$('#movies').show();
+	$('#food1').show();
+	$('#submit').show();
+	$('#movieresults').hide();
+	$('#foodresults').hide();
+	$('#refreshResultsButton').hide();
+	$('#resetButton').hide();	
+})
 
 
 $('.submit').on('click', function(){
@@ -35,6 +47,7 @@ $('.submit').on('click', function(){
 	$('#movieresults').show();
 	$('#foodresults').show();
 	$('#refreshResultsButton').show();
+	$('#resetButton').show();
 	
 	var actor = $('#actor').val();
 	var director = $('#director').val();
@@ -68,7 +81,8 @@ $('.submit').on('click', function(){
 				movieUrl = "'" + movieData.Poster + "'";
 				console.log(movieData);
 				console.log(movieData.Poster);				
-				$('#movieresults').append('<img src= ' + movieUrl + '>');
+				$('#movieresults').append('<img src= ' + movieUrl + '>')
+				$('#movieresults').append(movieData.plot);
 		})
 	})
 
