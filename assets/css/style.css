@@ -84,6 +84,12 @@
 	width: 80%;
 }
 
+#refreshResultsButton{
+	font-size: 16px;
+	padding:30px 15px;
+	width:300px;
+	display:flex;
+}
 
 #searchmovie {
 	color:white;
@@ -100,6 +106,8 @@
 	width: 90px;
 	display:flex;
 }
+
+
 #title {
 	background-color: white;
 	border-bottom: 8px solid red;
